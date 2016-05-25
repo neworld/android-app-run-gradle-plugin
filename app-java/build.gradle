@@ -1,4 +1,14 @@
 apply plugin: 'com.android.application'
+apply plugin: 'android-run-app'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "ae.vigilancer.gradle.plugin:android-run:1.0.1"
+    }
+}
 
 android {
     compileSdkVersion 23
